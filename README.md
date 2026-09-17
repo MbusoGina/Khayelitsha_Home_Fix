@@ -46,7 +46,7 @@ initial HTML pages, navigation, testing and GitHub preparation.
 - **Student number:** ST10463807
 - **Module** WEDE5020 Web Development
 - **Part:** Part 1 — Building the Foundation: Project Initiation and Planning
--**Part: Part 2 - Designing the Visuals
+-**Part:** Part 2 - Designing the Visuals
 ## Project Overview:
 Khayelitsha HomeFix is a fictional small business created for the WEDE5020 website project. The proposed organisation provides practical home-maintenance services to households in Khayelitsha and surrounding Cape Town areas.
 
@@ -152,7 +152,6 @@ The service photographs used in the website are linked from Unsplash and were se
 - Improved mobile layout and visual hierarchy.
 - Added sitemap/wireframe documentation.
 - Expanded README and research notes.
->>>>>>> f31c759 (Update README sitemap link)
 
-## References
+## References:
 Organisation-specific references and asset sources are recorded in `research/references.md` and `research/asset-log.md`.
