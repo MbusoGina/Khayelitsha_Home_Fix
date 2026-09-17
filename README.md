@@ -1,4 +1,4 @@
-# Khayelitsha HomeFix — WEDE5020 Part 1
+# Khayelitsha HomeFix — WEDE5020 POE
 
 ## Student Information
 <<<<<<< HEAD
