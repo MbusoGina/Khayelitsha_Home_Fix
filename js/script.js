@@ -54,7 +54,6 @@ galleryImages.forEach(function(image) {
     });
 
 });
-
 // Close button functionality
 closeButton.addEventListener("click", function() {
 
