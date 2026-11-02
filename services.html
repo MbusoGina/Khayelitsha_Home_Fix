@@ -165,7 +165,32 @@ Request a Quote
 <p>
 Phone:
 <a href="tel:+27753807936">+27 75 380 7936</a>
-|
+    
+<h1>Our Services</h1>
+<!-- Search Services -->
+<div class="service-controls">
+
+    <input
+        type="text"
+        id="serviceSearch"
+        placeholder="Search for a service..."
+        aria-label="Search services"
+    >
+
+    <select id="serviceSort" aria-label="Sort services">
+        <option value="az">Name: A to Z</option>
+        <option value="za">Name: Z to A</option>
+    </select>
+
+</div>
+<!-- Dynamic Service Listings -->
+<div class="grid" id="servicesGrid">
+
+</div>
+
+<p id="noResults" hidden>
+    No services found. Try another search.
+</p>
 Email:
 <a href="mailto:info@example.co.za">info@example.co.za</a>
 </p>
