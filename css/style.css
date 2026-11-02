@@ -550,3 +550,35 @@ footer a:hover {
         margin-top: 1.5rem;
     }
 }
+/* FAQ Accordion */
+
+.faq-section {
+    margin-top: 3rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.accordion-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light);
+    color: var(--navy);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion-button:hover {
+    background: #e5eaf0;
+}
+
+.accordion-content {
+    padding: 1rem;
+    background: var(--white);
+}
