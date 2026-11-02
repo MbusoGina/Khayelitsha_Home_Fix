@@ -577,54 +577,54 @@ footer a:hover {
 .accordion-button:hover {
     background: #e5eaf0;
 }
-// Service Image Gallery
+/* Service Image Gallery */
 
-const galleryImages = document.querySelectorAll(".gallery-image");
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-const lightbox = document.getElementById("imageLightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const closeButton = document.getElementById("closeLightbox");
+.gallery-image:hover {
+    transform: scale(1.03);
+}
 
-// Open image when clicked
-galleryImages.forEach(function(image) {
+/* Lightbox background */
 
-    image.addEventListener("click", function() {
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
 
-        lightboxImage.src = image.src;
-        lightboxImage.alt = image.alt;
+/* Enlarged image */
 
-        lightbox.hidden = false;
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
 
-    });
+/* Close button */
 
-});
-
-// Close button functionality
-closeButton.addEventListener("click", function() {
-
-    lightbox.hidden = true;
-
-});
-
-// Close when clicking outside the image
-lightbox.addEventListener("click", function(event) {
-
-    if (event.target === lightbox) {
-        lightbox.hidden = true;
-    }
-
-});
-
-// Close when pressing Escape
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        lightbox.hidden = true;
-    }
-
-});
-
-.accordion-content {
-    padding: 1rem;
-    background: var(--white);
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.lightbox[hidden] {
+    display: none;
 }
