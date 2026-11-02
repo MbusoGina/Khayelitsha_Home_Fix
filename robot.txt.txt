@@ -3,3 +3,4 @@
 User-agent: *
 
 Allow: /
+Sitemap: https://mbusogina.github.io/Khayelitsha_Home_Fix/index.html/sitemap.xml
