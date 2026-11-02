@@ -628,3 +628,36 @@ footer a:hover {
 .lightbox[hidden] {
     display: none;
 }
+/* Service Search and Sorting */
+
+.service-controls {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+    max-width: 650px;
+}
+
+.service-controls input,
+.service-controls select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.service-controls input {
+    flex: 1;
+    min-width: 0;
+}
+
+.service-controls select {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .service-controls {
+        flex-direction: column;
+    }
+
+}
