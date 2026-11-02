@@ -148,3 +148,49 @@ function displayServices(serviceList) {
 
 // Load services when the page opens
 displayServices(services);
+// Search and Sort Services
+
+const searchInput = document.getElementById("serviceSearch");
+const sortSelect = document.getElementById("serviceSort");
+const noResults = document.getElementById("noResults");
+
+function filterAndSortServices() {
+
+    const searchTerm = searchInput.value.toLowerCase();
+
+    // Filter services based on search
+    let filteredServices = services.filter(function(service) {
+
+        return service.name.toLowerCase().includes(searchTerm) ||
+               service.description.toLowerCase().includes(searchTerm);
+
+    });
+
+    // Sort services alphabetically
+    if (sortSelect.value === "az") {
+
+        filteredServices.sort(function(a, b) {
+            return a.name.localeCompare(b.name);
+        });
+
+    } else {
+
+        filteredServices.sort(function(a, b) {
+            return b.name.localeCompare(a.name);
+        });
+
+    }
+
+    // Display matching services
+    displayServices(filteredServices);
+
+    // Show message if nothing matches
+    noResults.hidden = filteredServices.length > 0;
+
+}
+
+// Listen for search input
+searchInput.addEventListener("input", filterAndSortServices);
+
+// Listen for sorting changes
+sortSelect.addEventListener("change", filterAndSortServices);
