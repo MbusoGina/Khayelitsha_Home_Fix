@@ -79,3 +79,38 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+// Dynamic Service Data
+
+const services = [
+
+    {
+        name: "Plumbing",
+        image: "images/plumbing.jpg",
+        description: "General maintenance, minor repairs, leaks and household plumbing support."
+    },
+
+    {
+        name: "Electrical",
+        image: "images/electrical.jpg",
+        description: "Basic electrical maintenance and repair support for residential and small-business needs."
+    },
+
+    {
+        name: "Painting",
+        image: "images/painting.jpg",
+        description: "Interior and exterior painting preparation and application services."
+    },
+
+    {
+        name: "Carpentry",
+        image: "images/carpentry.jpg",
+        description: "Minor household carpentry, repairs and maintenance."
+    },
+
+    {
+        name: "General Maintenance",
+        image: "images/handyman.jpg",
+        description: "Practical repairs and maintenance tasks that keep properties functional and presentable."
+    }
+
+];
