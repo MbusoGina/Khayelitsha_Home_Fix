@@ -114,3 +114,37 @@ const services = [
     }
 
 ];
+// Display Services Dynamically
+
+const servicesGrid = document.getElementById("servicesGrid");
+
+function displayServices(serviceList) {
+
+    servicesGrid.innerHTML = "";
+
+    serviceList.forEach(function(service) {
+
+        const serviceCard = `
+            <article class="card">
+
+                <img
+                    src="${service.image}"
+                    alt="${service.name} maintenance service"
+                    class="gallery-image"
+                >
+
+                <h2>${service.name}</h2>
+
+                <p>${service.description}</p>
+
+            </article>
+        `;
+
+        servicesGrid.innerHTML += serviceCard;
+
+    });
+
+}
+
+// Load services when the page opens
+displayServices(services);
