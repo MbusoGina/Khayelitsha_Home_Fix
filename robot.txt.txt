@@ -1,0 +1,5 @@
+# Instructions for search engine crawlers
+
+User-agent: *
+
+Allow: /
