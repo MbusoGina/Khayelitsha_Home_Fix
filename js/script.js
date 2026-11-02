@@ -41,17 +41,18 @@ const lightbox = document.getElementById("imageLightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const closeButton = document.getElementById("closeLightbox");
 
-// Open image when clicked
-galleryImages.forEach(function(image) {
+// Open dynamically generated service images
 
-    image.addEventListener("click", function() {
+servicesGrid.addEventListener("click", function(event) {
 
-        lightboxImage.src = image.src;
-        lightboxImage.alt = image.alt;
+    if (event.target.classList.contains("gallery-image")) {
+
+        lightboxImage.src = event.target.src;
+        lightboxImage.alt = event.target.alt;
 
         lightbox.hidden = false;
 
-    });
+    }
 
 });
 // Close button functionality
